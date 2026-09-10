@@ -1010,7 +1010,7 @@ void EditEntryWidget::setForms(Entry* entry, bool restore)
     // moved the font setter for PaswordWidget from the constructor to here
     QFont passwordFont = Font::fixedFont();
     passwordFont.setLetterSpacing(QFont::PercentageSpacing, 110);
-    m_ui->passwordEdit->setFont(passwordFont);
+    m_mainUi->passwordEdit->setFont(passwordFont);
     if (config()->get(Config::GUI_MonospaceNotes).toBool()) {
         m_mainUi->notesEdit->setFont(Font::fixedFont());
     } else {
